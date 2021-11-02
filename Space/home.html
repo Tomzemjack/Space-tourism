@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/destination.css">
+    <link rel="stylesheet" href="./style/crew.css">
+    <link rel="stylesheet" href="./style/technology.css">
+</head>
+<body id="body">
+    <div class="header pt-5">
+        <div class="logo ps-5">
+            <img src="./assets/shared/logo.svg" alt="">
+        </div> 
+        <div class="link-container">
+            <div class="links"> 
+                <h5 id="link-active" class="home"><b>00</b> <span class="lead mx-3">Home</span></h5>
+                <h5 class="destination"><b>01</b> <span class="lead mx-3">Destination</span></h5>
+                <h5 class="crew"><b>02</b> <span class="lead mx-3">Crew</span></h5>
+                <h5 class="tech"><b>03</b> <span class="lead mx-3">Technology</span></h5>
+            </div>
+        </div>
+        <div class="burger burgerActive">
+            <div class="closeNav" style="pointer-events: none;">
+                <button class="btn" id="humberger_nav" style="pointer-events: auto;">
+                    <img src="./assets/shared/icon-hamburger.svg" alt="">
+                </button>
+            </div>
+            <div class="mobile-nav">
+                <button id="close_nav"><i class="fas fa-times-circle"></i></button>
+                <ul class="burger__list mt-5">
+                    <li class="burger_item" id="burger_home"><b>00</b> <span class="lead mx-3">Home</span></li>
+                </ul>
+                <ul class="burger__list mt-5">
+                    <li class="burger_item" id="burger_dest"><b>01</b> <span class="lead mx-3">Destination</span></li>
+                </ul>
+                <ul class="burger__list mt-5">
+                    <li class="burger_item" id="burger_crew"><b>02</b> <span class="lead mx-3">Crew</span></li>
+                </ul>
+                <ul class="burger__list mt-5">
+                    <li class="burger_item" id="burger_tech"><b>03</b> <span class="lead mx-3">Technology</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Remove d-none -->
+    <!-- class="d-none" -->
+    <div id="welcome-content">
+        <div id="text-content">
+            <h5 id="intro-text">So, you want to travel to</h5>
+            <h1 class="space-txt">SPACE</h1>
+            <p id="take-txt" class="text-center pt-3">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+        </div>
+        <div id="spaceBtn">
+            <button class="btn" id="explore">Explore</button>
+        </div>
+    </div>
+
+    <!--add Class  d-none -->
+    <div id="destination" class="d-none">
+        <div id="space-dest">
+            <h4 class="intro-header-txt mb-7"><b class="color-dark-gray">01</b> Pick your destination</h4>
+            <img src="./assets/destination/image-moon.webp" alt="" id="space-dest-image">
+        </div>
+        <div id="dest-info">
+            <div id="dest-info-links">
+                <ul id="dest-info-links-ul">
+                    <li class="dest-info-links-active" id="dest-moon">Moon</li>
+                    <li id="dest-mars">Mars</li>
+                    <li id="dest-europa">Europa</li>
+                    <li id="dest-titan">Titan</li>
+                </ul>
+            </div>
+            <div id="dest-intro-info">
+                <h5 id="curr-dest-space" class="text-uppercase space-txt">Moon</h5>
+                <br>
+                <h5 class="color-light-gray" id="dest-desc">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</h5>
+                <br>
+                <hr>
+            </div>
+            <br>
+            <div id="dest-info-distance">
+                <div id="avg-distance" class="my-3">
+                    <h5 class="text-uppercase color-dark-gray font-mono">Avg. distance</h5>
+                    <h4 class="text-uppercase font-zen" id="dest-distance">384,400 km</h4>
+                </div>
+                <div id="travel-time">
+                    <h5 class="text-uppercase color-dark-gray font-mono">Est. travel time</h5>
+                    <h4 class="text-uppercase font-zen" id="dest-travel">3 days</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="crew" class="d-none">
+        <div id="crew-left">
+            <div>
+                <h4 class="intro-header-txt mb-7"><b class="color-dark-gray">02</b> Meet your crew</h4>
+            </div>
+            <br><br>
+            <div id="crew-information" class="mb-5">
+                <h1 class="font-mono color-dark-gray text-uppercase" style="letter-spacing: 8px;" id="crew-role">Commander</h1>
+                <h1 class="font-zen text-uppercase mb-4" style="letter-spacing: 8px;" id="crew-name">Douglas Hurley</h1>
+    
+                <div id="crew-desc-parent">
+                    <h5 class="color-light-gray font-mono" id="crew-desc">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</h5>
+                </div>
+            </div>
+
+            <div id="dots">
+                <button class="dotsActive" id="crew-hurley"><i class="fas fa-circle"></i></button>
+                <button id="crew-shutt"><i class="fas fa-circle"></i></button>
+                <button id="crew-glover"><i class="fas fa-circle"></i></button>
+                <button id="crew-ansari"><i class="fas fa-circle"></i></button>
+            </div>
+        </div>
+        <div id="crew-right">
+            <img src="./assets/crew/image-douglas-hurley.webp" alt="" class="img-fluid" id="crew-img">
+        </div>
+    </div>
+
+    <!-- class="d-none" -->
+    <div id="technology" class="d-none">
+        <div>
+            <h4 class="intro-header-txt mb-7"><b class="color-dark-gray">03</b> Space Launch 101</h4>
+        </div>
+        <div id="tech-info">
+            <div id="tech-main">
+                <div class="d-flex" id="tech-main-centra"> 
+                    <div id="tech-buttons">
+                        <button class="btn tech-button-active" id="tech-first">1</button>
+                        <button class="btn" id="tech-second">2</button>
+                        <button class="btn " id="tech-third">3</button>
+                    </div>
+                    <div id="tech-main-info" class="mx-5">
+                        <h6 class="color-light-gray text-uppercase font-osw" style="letter-spacing: 3px;">The Technology...</h6>
+                        <h1 class="text-uppercase font-zen" style="letter-spacing: 3px;" id="tech-name">Launch Vehicle</h1>
+                        <div id="tech-desc" class="font-mono color-light-gray text-wrap">
+                            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+                        </div>
+                    </div>    
+                </div>
+                <div id="tech-img-parent">
+                    <img src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="" id="tech-image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./control/webControl.js"></script>
+    <script src="./control/destination.js"></script>
+    <script src="./control/crew.js"></script>
+    <script src="./control/technology.js"></script>
+</body>
+</html>

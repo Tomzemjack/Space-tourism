@@ -1,0 +1,82 @@
+#technology{
+    padding-left: 10%;
+}
+
+#tech-main{
+    display: flex;
+}
+
+#tech-buttons{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#tech-buttons button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border:2px solid #191c25;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: monospace;
+    color: white;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+
+#tech-buttons button:hover{
+    background: #ffe69b;
+    color: black;
+    border: none;
+    border-radius: 28% 72% 24% 76% / 48% 48% 52% 52%  ;
+    -webkit-border-radius: 28% 72% 24% 76% / 48% 48% 52% 52%  ;
+    -moz-border-radius: 28% 72% 24% 76% / 48% 48% 52% 52%  ;
+    -ms-border-radius: 28% 72% 24% 76% / 48% 48% 52% 52%  ;
+    -o-border-radius: 28% 72% 24% 76% / 48% 48% 52% 52%  ;
+}
+
+#tech-buttons:hover .tech-button-active{
+    background: none;
+    color : white !important;
+}
+
+.tech-button-active{
+    background : white;
+    color : black !important;
+}
+
+.tech-button-active:hover{
+    border: 1px solid #ffe69b !important;
+    border-radius: 30% 70% 29% 71% / 77% 29% 71% 23% !important;
+    -webkit-border-radius: 30% 70% 29% 71% / 77% 29% 71% 23% !important;
+    -moz-border-radius: 30% 70% 29% 71% / 77% 29% 71% 23% !important;
+    -ms-border-radius: 30% 70% 29% 71% / 77% 29% 71% 23% !important;
+    -o-border-radius: 30% 70% 29% 71% / 77% 29% 71% 23% !important;
+}
+
+#tech-name{
+    font-size: 45px;
+}
+
+#tech-main-info{
+    width: 500px;
+}
+
+#tech-img-parent{
+    width: 40%;
+}
+
+#tech-image{
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+}

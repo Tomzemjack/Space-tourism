@@ -1,0 +1,36 @@
+#crew{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#crew-information{
+    width: 600px;
+}
+
+#dots button{
+    border: none;
+    background: none;
+    color: #474b56;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    font-size: 20px;
+}
+
+#dots button:hover{
+    color : white;
+}
+
+#dots:hover .dotsActive{
+    color: #474b56 !important;
+} 
+
+.dotsActive{
+    color : white !important;
+}
+
+#crew-img{
+    width: 450px;
+}
